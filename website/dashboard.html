@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Live Dashboard | HORIZON GRIDGUARD</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                HORIZON GRIDGUARD
+            </div>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a
+                    href="dashboard.html"
+                    class="active"
+                >
+                    Dashboard
+                </a>
+
+                <a href="sensors.html">
+                    Sensors
+                </a>
+
+                <a href="alerts.html">
+                    Alerts
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <section class="dashboard-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    REAL-TIME MONITORING
+                </p>
+
+                <h1>
+                    Live Dashboard
+                </h1>
+
+                <p>
+                    Monitor temperature and humidity
+                    from the HORIZON GRIDGUARD sensor.
+                </p>
+
+            </div>
+
+
+            <div class="connection-status">
+
+                <span
+                    id="connectionDot"
+                    class="status-indicator"
+                ></span>
+
+                <span id="connectionText">
+                    Connecting...
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- SENSOR CARDS -->
+
+        <section class="sensor-grid">
+
+
+            <!-- TEMPERATURE -->
+
+            <div
+                id="temperatureCard"
+                class="sensor-card"
+            >
+
+                <div class="sensor-card-header">
+
+                    <div>
+
+                        <p class="sensor-label">
+                            TEMPERATURE
+                        </p>
+
+                        <h2>
+                            Temperature
+                        </h2>
+
+                    </div>
+
+                    <div class="sensor-icon">
+                        &#8451;
+                    </div>
+
+                </div>
+
+
+                <div class="sensor-value">
+
+                    <span id="temperature">
+                        --.-
+                    </span>
+
+                    <span class="unit">
+                        °C
+                    </span>
+
+                </div>
+
+
+                <div class="progress-container">
+
+                    <div
+                        id="temperatureProgress"
+                        class="progress-bar temperature-bar"
+                    ></div>
+
+                </div>
+
+
+                <p
+                    id="temperatureStatus"
+                    class="sensor-status"
+                >
+                    Waiting for data
+                </p>
+
+            </div>
+
+
+            <!-- HUMIDITY -->
+
+            <div
+                id="humidityCard"
+                class="sensor-card"
+            >
+
+                <div class="sensor-card-header">
+
+                    <div>
+
+                        <p class="sensor-label">
+                            HUMIDITY
+                        </p>
+
+                        <h2>
+                            Humidity
+                        </h2>
+
+                    </div>
+
+                    <div class="sensor-icon">
+                        &#37;
+                    </div>
+
+                </div>
+
+
+                <div class="sensor-value">
+
+                    <span id="humidity">
+                        --.-
+                    </span>
+
+                    <span class="unit">
+                        %
+                    </span>
+
+                </div>
+
+
+                <div class="progress-container">
+
+                    <div
+                        id="humidityProgress"
+                        class="progress-bar humidity-bar"
+                    ></div>
+
+                </div>
+
+
+                <p
+                    id="humidityStatus"
+                    class="sensor-status"
+                >
+                    Waiting for data
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- OVERALL STATUS -->
+
+        <section class="overall-card">
+
+            <p class="sensor-label">
+                SYSTEM STATUS
+            </p>
+
+            <h2 id="overallStatus">
+                &#128993; Connecting to sensor...
+            </h2>
+
+            <p>
+                The dashboard automatically updates
+                with the latest sensor readings.
+            </p>
+
+        </section>
+
+
+        <!-- LAST UPDATE -->
+
+        <section class="update-card">
+
+            <div>
+
+                <p class="sensor-label">
+                    LAST UPDATE
+                </p>
+
+                <h3 id="lastUpdate">
+                    Waiting for sensor data...
+                </h3>
+
+            </div>
+
+
+            <div>
+
+                <p class="sensor-label">
+                    SENSOR
+                </p>
+
+                <h3>
+                    DHT11
+                </h3>
+
+            </div>
+
+
+            <div>
+
+                <p class="sensor-label">
+                    CONTROLLER
+                </p>
+
+                <h3>
+                    ESP32
+                </h3>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            HORIZON GRIDGUARD
+        </p>
+
+        <p>
+            Developed by Ganesh &amp; Omkar
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
