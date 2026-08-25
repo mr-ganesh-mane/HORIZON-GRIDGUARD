@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Alerts | HORIZON GRIDGUARD</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                HORIZON GRIDGUARD
+            </div>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="sensors.html">
+                    Sensors
+                </a>
+
+                <a
+                    href="alerts.html"
+                    class="active"
+                >
+                    Alerts
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <section class="page-header">
+
+            <p class="eyebrow">
+                ENVIRONMENT MONITORING
+            </p>
+
+            <h1>
+                Alerts
+            </h1>
+
+            <p>
+                Monitor temperature and humidity
+                conditions detected by the DHT11 sensor.
+            </p>
+
+        </section>
+
+
+        <!-- TEMPERATURE ALERT -->
+
+        <section class="alert-card">
+
+            <div class="alert-icon">
+                &#8451;
+            </div>
+
+            <div class="alert-content">
+
+                <p class="sensor-label">
+                    TEMPERATURE ALERT
+                </p>
+
+                <h2>
+                    High Temperature
+                </h2>
+
+                <p>
+                    A high-temperature warning will
+                    be shown when the measured
+                    temperature exceeds the configured
+                    safe level.
+                </p>
+
+                <div class="alert-threshold">
+
+                    <span>
+                        Warning Level
+                    </span>
+
+                    <strong>
+                        &gt; 30 °C
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HUMIDITY ALERT -->
+
+        <section class="alert-card">
+
+            <div class="alert-icon">
+                &#37;
+            </div>
+
+            <div class="alert-content">
+
+                <p class="sensor-label">
+                    HUMIDITY ALERT
+                </p>
+
+                <h2>
+                    High Humidity
+                </h2>
+
+                <p>
+                    A humidity warning will be shown
+                    when the measured humidity exceeds
+                    the configured safe level.
+                </p>
+
+                <div class="alert-threshold">
+
+                    <span>
+                        Warning Level
+                    </span>
+
+                    <strong>
+                        &gt; 70 %
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ALERT STATUS -->
+
+        <section class="overall-card">
+
+            <p class="sensor-label">
+                CURRENT SYSTEM STATUS
+            </p>
+
+            <h2 id="alertOverallStatus">
+                &#128993; Waiting for sensor data...
+            </h2>
+
+            <p>
+                Live alert status will be connected
+                to the REST API when the dashboard
+                receives sensor data.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            HORIZON GRIDGUARD
+        </p>
+
+        <p>
+            Developed by Ganesh &amp; Omkar
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

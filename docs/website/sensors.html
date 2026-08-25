@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sensors | HORIZON GRIDGUARD</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                HORIZON GRIDGUARD
+            </div>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a
+                    href="sensors.html"
+                    class="active"
+                >
+                    Sensors
+                </a>
+
+                <a href="alerts.html">
+                    Alerts
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <section class="page-header">
+
+            <p class="eyebrow">
+                SENSOR INFORMATION
+            </p>
+
+            <h1>
+                Sensor System
+            </h1>
+
+            <p>
+                Information about the sensors and
+                hardware used by HORIZON GRIDGUARD.
+            </p>
+
+        </section>
+
+
+        <section class="info-grid">
+
+
+            <!-- DHT11 -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    &#8451;
+                </div>
+
+                <h2>
+                    DHT11
+                </h2>
+
+                <p>
+                    The DHT11 is used to measure
+                    environmental temperature and
+                    relative humidity.
+                </p>
+
+                <div class="info-details">
+
+                    <div>
+                        <span>
+                            Measurement
+                        </span>
+
+                        <strong>
+                            Temperature
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Measurement
+                        </span>
+
+                        <strong>
+                            Humidity
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ESP32 -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    &#9889;
+                </div>
+
+                <h2>
+                    ESP32
+                </h2>
+
+                <p>
+                    The ESP32 collects readings from
+                    the DHT11 and communicates with
+                    the HORIZON GRIDGUARD REST API
+                    using Wi-Fi.
+                </p>
+
+                <div class="info-details">
+
+                    <div>
+                        <span>
+                            Communication
+                        </span>
+
+                        <strong>
+                            Wi-Fi
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Data Protocol
+                        </span>
+
+                        <strong>
+                            REST API
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- API -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    &#8644;
+                </div>
+
+                <h2>
+                    REST API
+                </h2>
+
+                <p>
+                    The REST API provides communication
+                    between the ESP32 sensor system and
+                    the HORIZON GRIDGUARD website.
+                </p>
+
+                <div class="info-details">
+
+                    <div>
+                        <span>
+                            Method
+                        </span>
+
+                        <strong>
+                            HTTP
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Format
+                        </span>
+
+                        <strong>
+                            JSON
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <section class="info-banner">
+
+            <p class="sensor-label">
+                DATA FLOW
+            </p>
+
+            <h2>
+                DHT11
+                &nbsp;&rarr;&nbsp;
+                ESP32
+                &nbsp;&rarr;&nbsp;
+                REST API
+                &nbsp;&rarr;&nbsp;
+                HORIZON GRIDGUARD
+            </h2>
+
+            <p>
+                Sensor readings are collected by the
+                ESP32 and delivered to the monitoring
+                platform through the REST API.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            HORIZON GRIDGUARD
+        </p>
+
+        <p>
+            Developed by Ganesh &amp; Omkar
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
