@@ -15,7 +15,7 @@
 // we will change this to the public API address.
 // =====================================================
 
-const API_URL = "http://127.0.0.1:5000/api/latest";
+const API_URL = "https://horizon-gridguard-apitest.onrender.com/api/latest";
 
 
 // =====================================================
